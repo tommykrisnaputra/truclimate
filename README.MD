@@ -1,0 +1,75 @@
+Steps to run:
+1. Install PHP 8.1+
+2. Install MySQL
+3. Set .env in next-backend
+4. Run PHP & MySQL
+5. Run "php artisan serve" in next-backend
+6. Run "npm run dev" in breeze-next
+7. Go to localhost:3000 > click on login
+8. Login with Twitter
+9. Authorize the app
+10. Logged in with Twitter
+ 
+Tech Stacks:
+PHP 8.1
+Laravel 10.0
+Laravel Socialite 5.6
+Next 13.0.3
+React 18.2.0
+
+GitHub: 
+https://github.com/tommykrisnaputra/truclimate
+
+ENV
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:FUs+ltcR4lR9GCQLSjQYqo5ABijBsDqgYg346AX2tWI=
+APP_DEBUG=true
+APP_URL=http://localhost:8000
+FRONTEND_URL=http://localhost:3000
+
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=next_backend
+DB_USERNAME=root
+DB_PASSWORD=
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DISK=local
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MEMCACHED_HOST=127.0.0.1
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=mailpit
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+VITE_PUSHER_HOST="${PUSHER_HOST}"
+VITE_PUSHER_PORT="${PUSHER_PORT}"
+VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
+VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
+TWITTER_CONSUMER_KEY="ajFMdmhxSlZSS01pbDQ2WEJfRzg6MTpjaQ"
+TWITTER_CONSUMER_SECRET="fzhte6f6fpy9GrjprLQAOnTKdH4JEV7fJ90bwngs9XUeW9wb_0"
+TWITTER_ACCESS_TOKEN="89570568-KwqutBo1LdlDbGZ0ALrDhNpYI9N6V8gXafGxomXY2"
+TWITTER_ACCESS_TOKEN_SECRET="vbuhmPUIUp4tzxIlwC6Uvul9eocMQSaB0NTII4X0MY8Oq"
+TWITTER_API_VERSION=2
+TWITTER_CLIENT_REDIRECT="http://localhost:8000/auth/twitter/callback"
